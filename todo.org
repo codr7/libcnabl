@@ -1,0 +1,4 @@
+* bench
+** add timer
+* replace free_list with vec
+* inline?
