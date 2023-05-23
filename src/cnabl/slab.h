@@ -4,9 +4,11 @@
 #include <stddef.h>
 #include <stdint.h>
 #include "cnabl/ls.h"
+#include "cnabl/vec.h"
 
 struct slab_alloc {
-  struct ls slabs, free_slots;
+  struct ls slabs;
+  struct vec free_slots;
   size_t slot_count, slot_size, i;
 };
 
